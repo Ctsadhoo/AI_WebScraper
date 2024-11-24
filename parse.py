@@ -9,7 +9,7 @@ template = (
     "**Direct Data Only:** Your output should contain only the data that is explicitly requested."
 )
 
-model = OllamaLLM(model="llama3")
+model = OllamaLLM(model="llama3.1")
 
 def parse_with_ollama(dom_chunks, parse_description):
     prompt = ChatPromptTemplate.from_template(template)
